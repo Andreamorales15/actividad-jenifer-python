@@ -19,7 +19,7 @@ document.getElementById("formPelicula").addEventListener("submit", function(even
         foto: foto
     };
 
-    fetch('/agregarpelicula/', {
+    fetch('/agrepeliculas/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ if (estado === "True") {
     text: mensaje,
     confirmButtonText: 'Aceptar'
 }).then(() => {
-    window.location.href = '/listapelicula/';
+    window.location.href = '/listpeliculas/';
 }
 );
 } else 

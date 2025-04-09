@@ -19,7 +19,7 @@ mail = Mail(app)
 CORS(app)
 app.config["UPLOAD_FOLDER"] = "./static/img"
 app.config["MONGODB_SETTINGS"] = [{
-    "db": "GestionPeliculas2",
+    "db": "GestionamientodePeliculas",
     "host": os.getenv("MONGO_URI"),
     "port": 27017
 }]
